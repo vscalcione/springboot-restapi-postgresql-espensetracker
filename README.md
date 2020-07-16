@@ -48,6 +48,24 @@ Return this response:
   "message": "registered successfully"
 }
 ```
+If you type an email with invalid format, the response is like the 1st part of json and, If type the same email for 2 or
+more times, the response is like the lastn part of json :
+```json
+{
+  "status": 401,
+  "error": "Unauthorized",
+  "message": "Invalid email format",
+  "path": "/api/users/register"
+}
+```
+```json
+{
+  "status": 401,
+  "error": "Unauthorized",
+  "message": "Email already in use",
+  "path": "/api/users/register"
+}
+```
 
 For verify the executed query, type this command on the bash like in picture:
 ```bash

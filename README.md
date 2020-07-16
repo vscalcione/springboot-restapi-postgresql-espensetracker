@@ -7,7 +7,7 @@
 ![database](https://img.icons8.com/fluent/96/000000/database.png)
 
 This is REST API application developed in Java with Spring Boot Framework.
-For the testing of APIs, you can use Postman or Insomnia, all free softwares that can tests all HTTP Methods on this 
+For the testing of APIs, you can use <b>Postman, Insomnia</b>, all free softwares that can tests all HTTP Methods on this 
 REST API
 
 ### Initialization (Docker-container's startup)

@@ -49,7 +49,7 @@ Return this response:
 }
 ```
 If you type an email with invalid format, the response is like the 1st part of json and, If type the same email for 2 or
-more times, the response is like the lastn part of json :
+more times, the response is like the last part of json :
 ```json
 {
   "status": 401,
@@ -67,7 +67,7 @@ more times, the response is like the lastn part of json :
 }
 ```
 
-For verify the executed query, type this command on the bash like in picture:
+For verify the executed query, type this command on the bash:
 ```bash
 $ docker container exec -it postgresdb psql -U postgres
 $ \connect expensetrackerdb;

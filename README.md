@@ -31,3 +31,15 @@ $ docker cp create_db.sql postgresdb:/
 $ docker container exec -it postgresdb bash
 $ psql -U postgres --file create_db.sql
 ```
+
+### Add user
+![add-user-postman](images/add_user_postman.png)
+
+For verify the executed query, type this command on the bash like in picture:
+```bash
+$ docker container exec -it postgresdb psql -U postgres
+$ \connect expensetrackerdb;
+$ select * from expensetracker_users;
+```
+
+![add-user-postqresql](images/add_user_postgresql_docker.png)

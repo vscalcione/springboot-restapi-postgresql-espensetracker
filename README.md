@@ -32,8 +32,22 @@ $ docker container exec -it postgresdb bash
 $ psql -U postgres --file create_db.sql
 ```
 
-### Add user
-![add-user-postman](images/add_user_postman.png)
+### Add user 
+<b>GET http://localhost:8080/api/users/register </b><br>
+```json 
+{
+  "firstName": "David", 
+  "lastName": "Smith",
+  "email": "d.smith@gmail.com",
+  "password": "test123"
+}
+```
+Return this response:
+```json
+{
+  "message": "registered successfully"
+}
+```
 
 For verify the executed query, type this command on the bash like in picture:
 ```bash
@@ -41,5 +55,3 @@ $ docker container exec -it postgresdb psql -U postgres
 $ \connect expensetrackerdb;
 $ select * from expensetracker_users;
 ```
-
-![add-user-postqresql](images/add_user_postgresql_docker.png)
